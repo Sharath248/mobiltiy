@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobility Aggregator Platform</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mobility Aggregator Platform</h1>
+    </header>
+
+    <main>
+      <section id="location">
+        <h2>Your Location: <span id="current-location">Delhi</span></h2>
+        <select id="city-selector">
+          <option value="Delhi" selected>Delhi</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Chennai">Chennai</option>
+        </select>
+      </section>
+
+      <section id="mobility-apps">
+        <h2>Mobility Apps</h2>
+        <div id="app-list">
+          <!-- Dynamically populated via JavaScript -->
+        </div>
+        <p id="no-data" style="display: none">
+          No data available for this city. We will be adding it soon!
+        </p>
+      </section>
+
+      <section id="museum">
+        <h2>Antique Mobility Museum</h2>
+        <p id="museum-info">Explore trivia about antique mobility!</p>
+      </section>
+
+      <section id="cta">
+        <h2>Stay Updated!</h2>
+        <form id="signup-form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mobility Aggregator Platform</p>
+    </footer>
+
+    <script src="js/app-data.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
